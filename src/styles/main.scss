@@ -346,6 +346,7 @@ body {
 .gallery {
     padding: 4% 0 0;
     position: relative;
+    min-height: 80vh;
 
     .category {
         width: fit-content;
