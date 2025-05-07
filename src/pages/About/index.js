@@ -1,7 +1,6 @@
-import React, { useRef } from 'react';
-import { Col, Container, Row, Tab, Tabs, Image } from 'react-bootstrap';
-import avatar from '../../assets/avatar.jpg';
-import profile from '../../assets/profile_pic.jpg';
+import React, {  } from 'react';
+import { Col, Container, Row, Image } from 'react-bootstrap';
+import profile from '../../assets/profile_.jpg';
 import { BsGlobe, BsLinkedin, BsGithub } from "react-icons/bs";
 
 function About() {

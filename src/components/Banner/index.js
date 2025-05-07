@@ -1,7 +1,7 @@
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { BsChevronRight } from "react-icons/bs";
-import profile from '../../assets/profile_pic.jpg';
+import profile from '../../assets/profile_.jpg';
 import avatar from '../../assets/avatar.jpg';
 
 function Banner() {

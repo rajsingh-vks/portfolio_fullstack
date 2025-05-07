@@ -150,13 +150,14 @@ body {
 
         .banner_profile {
             display: flex;
+            height: 100%;
 
             .profile_img {
                 margin: auto;
                 border-radius: 50%;
-                height: 400px;
+                height: 350px;
                 background-color: #151515;
-                border: 2px solid rgba(149, 149, 149, 0.1019607843);
+                border: 3px solid rgba(149, 149, 149, 0.1019607843);
             }
         }
     }
@@ -173,7 +174,7 @@ body {
     .about_content {
         .profile_img {
             border-radius: 50%;
-            width: 160px;
+            // width: 160px;
             height: 160px;
             background-color: #151515;
             border: 2px solid rgba(149, 149, 149, 0.1019607843);
