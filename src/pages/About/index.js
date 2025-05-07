@@ -1,4 +1,4 @@
-import React, {  } from 'react';
+import React, { } from 'react';
 import { Col, Container, Row, Image } from 'react-bootstrap';
 import profile from '../../assets/profile_.jpg';
 import { BsGlobe, BsLinkedin, BsGithub } from "react-icons/bs";
@@ -9,36 +9,34 @@ function About() {
     <div className='about my-5'>
       <Container>
         <div className='about_content'>
-          <div style={{ paddingTop: '60px' }}>
-            <Row>
-              <Col sm={2}>
-                <div className='text-center'>
-                  <Image src={profile} alt="profile" className='profile_img' />
-                  <div className='country my-3'>
-                    <BsGlobe style={{ marginRight: '5px' }} /> India
-                  </div>
-                  <div className='language d-flex'>
-                    <div className='language_wrapper'>English</div>
-                    <div className='language_wrapper'>Hindi</div>
-                  </div>
+          <Row>
+            <Col sm={2}>
+              <div className='text-center'>
+                <Image src={profile} alt="profile" className='profile_img' />
+                <div className='country my-3'>
+                  <BsGlobe style={{ marginRight: '5px' }} /> India
                 </div>
-              </Col>
-              <Col sm={{ span: 9, offset: 1 }}>
-                <h1>Raj Singh</h1>
-                <h2><span>Full Stack Developer & Designer</span></h2>
-                <div className='language d-flex mt-3 mb-4'>
-                  <div className='language_wrapper'><BsGithub size={16} style={{ verticalAlign: 'text-top', marginRight: 4 }} /> GitHub</div>
-                  <div className='language_wrapper'><BsLinkedin size={16} style={{ verticalAlign: 'text-top', marginRight: 4 }} /> LinkedIn</div>
+                <div className='language d-flex'>
+                  <div className='language_wrapper'>English</div>
+                  <div className='language_wrapper'>Hindi</div>
                 </div>
-                <p>Develop & Design engineer with a passion for transforming complex challenges into simple, elegant solutions.
-                  User interfaces, interactive experiences, and the convergence of design and develop.</p>
-              </Col>
-            </Row>
-          </div>
+              </div>
+            </Col>
+            <Col sm={{ span: 9, offset: 1 }}>
+              <h1>Raj Singh</h1>
+              <h2><span>Full Stack Developer & Designer</span></h2>
+              <div className='language d-flex mt-3 mb-4'>
+                <div className='language_wrapper'><BsGithub size={16} style={{ verticalAlign: 'text-top', marginRight: 4 }} /> GitHub</div>
+                <div className='language_wrapper'><BsLinkedin size={16} style={{ verticalAlign: 'text-top', marginRight: 4 }} /> LinkedIn</div>
+              </div>
+              <p>Develop & Design engineer with a passion for transforming complex challenges into simple, elegant solutions.
+                User interfaces, interactive experiences, and the convergence of design and develop.</p>
+            </Col>
+          </Row>
           <div className='mt-4'>
             <Row>
               <Col sm={{ span: 9, offset: 3 }}>
-                <h2 style={{borderBottom:' #979797 solid 1px'}}><b>Work Experience</b></h2>
+                <h2 style={{ borderBottom: ' #979797 solid 1px' }}><b>Work Experience</b></h2>
               </Col>
             </Row>
           </div>
@@ -105,7 +103,7 @@ function About() {
           <div className='mt-4'>
             <Row>
               <Col sm={{ span: 9, offset: 3 }}>
-                <h2 style={{borderBottom:' #979797 solid 1px'}}><b>Studies</b></h2>
+                <h2 style={{ borderBottom: ' #979797 solid 1px' }}><b>Studies</b></h2>
               </Col>
             </Row>
           </div>

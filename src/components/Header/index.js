@@ -9,11 +9,11 @@ function Header() {
                 <div className="container">
                     <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
                         <ul class="nav col-12 mx-auto justify-content-center mb-md-0 p-1">
-                            <NavLink to="/" className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}><BsHouse size={16} />  Home</NavLink>
-                            <NavLink to="/about" className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}><BsPersonCircle size={16} /> About</NavLink>
-                            <NavLink to="/work" className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}><BsCollection size={16} /> Work</NavLink>
-                            <NavLink to="/skills" className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}><BsClipboard2Data size={16} /> Skills</NavLink>
-                            <NavLink to="/gallery" className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}><BsBack size={16} /> Gallery</NavLink>
+                            <NavLink to="/" className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}><BsHouse />  Home</NavLink>
+                            <NavLink to="/about" className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}><BsPersonCircle /> About</NavLink>
+                            <NavLink to="/work" className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}><BsCollection /> Work</NavLink>
+                            <NavLink to="/skills" className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}><BsClipboard2Data /> Skills</NavLink>
+                            <NavLink to="/gallery" className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}><BsBack /> Gallery</NavLink>
                         </ul>
                     </div>
                 </div>

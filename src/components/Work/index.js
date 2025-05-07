@@ -28,6 +28,13 @@ function Work() {
                                 </Col>
                             </Row>
                         </div>
+                        <div className='neutral-background-medium'>
+                            <video autoPlay muted loop className='video_player'>
+                                <source src="/portfolio_.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                            <span className='video_overlay'></span>
+                        </div>
                     </div>
                 </Container>
             </div>

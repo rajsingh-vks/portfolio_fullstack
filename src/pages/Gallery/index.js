@@ -46,7 +46,7 @@ function Gallery() {
                                     style={{
                                         backgroundColor: selectedCategory === cat ? '#333' : 'transparent',
                                         color: selectedCategory === cat ? '#fff' : '#fff',
-                                        borderColor: selectedCategory === cat ? 'rgba(149, 149, 149, 0.3019607843)' : 'rgba(0, 0, 0, 0)'
+                                        borderColor: selectedCategory === cat ? 'hsla(0, 0%, 58%, .302)' : 'rgba(0, 0, 0, 0)'
                                     }}
                                 >
                                     {cat}
@@ -63,7 +63,7 @@ function Gallery() {
                             ) : (
                                 <Row>
                                     {filteredData.map((item) => (
-                                        <Col sm={3}>
+                                        <Col sm={4} md={3}>
                                             <div className="project text-center mb-4" key={item.id}>
                                                 <img
                                                     className="project_img p-3"
