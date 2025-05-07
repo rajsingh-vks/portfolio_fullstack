@@ -26,7 +26,7 @@ function Gallery() {
                     : data.filter((item) => item.category === selectedCategory);
             setFilteredData(filtered);
             setLoading(false);
-        }, 500); // simulate loading delay
+        }, 1000); // simulate loading delay
 
         return () => clearTimeout(timer);
     }, [selectedCategory]);

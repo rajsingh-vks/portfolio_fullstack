@@ -310,6 +310,10 @@ body {
         background-color: rgba(0, 0, 0, 0.3019607843);
         backdrop-filter: blur(1rem);
 
+        opacity: 0;
+        transform: translateY(40px);
+        animation: fadeInUp 1s ease-out forwards;
+
         .project_img {
             width: 100%;
         }
