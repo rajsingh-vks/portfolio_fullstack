@@ -1,19 +1,35 @@
-import React, { useState } from 'react';
-import { Col, Row } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import { Col, Row, Spinner } from 'react-bootstrap';
 //import data from "./project";
 import data from "./data";
 
 function Gallery() {
     const [selectedCategory, setSelectedCategory] = useState('All');
+    const [filteredData, setFilteredData] = useState(data);
+    const [loading, setLoading] = useState(false);
 
     // Get unique categories + 'All'
     const categories = ['All', ...new Set(data.map((item) => item.category))];
 
     // Filter data based on selected category
-    const filteredData =
-        selectedCategory === 'All'
-            ? data
-            : data.filter((item) => item.category === selectedCategory);
+    // const filteredData =
+    //     selectedCategory === 'All'
+    //         ? data
+    //         : data.filter((item) => item.category === selectedCategory);
+
+    useEffect(() => {
+        setLoading(true);
+        const timer = setTimeout(() => {
+            const filtered =
+                selectedCategory === 'All'
+                    ? data
+                    : data.filter((item) => item.category === selectedCategory);
+            setFilteredData(filtered);
+            setLoading(false);
+        }, 500); // simulate loading delay
+
+        return () => clearTimeout(timer);
+    }, [selectedCategory]);
 
     return (
         <div className='gallery my-5'>
@@ -39,44 +55,31 @@ function Gallery() {
                         </div>
                     </Col>
                     <Col sm={12}>
-                        <Row>
-                            {filteredData.map((item) => (
-                                <Col sm={3}>
-                                    <div className="project text-center mb-4" key={item.id}>
-                                        <img
-                                            className="project_img p-3"
-                                            src={item.image}
-                                            alt={item.title}
-                                        />
-                                        <h6 className="py-3 mb-0">{item.title}</h6>
-                                    </div>
-                                </Col>
-                            ))}
-                        </Row>
+                        {
+                            loading ? (
+                                <div className="text-center my-5 w-100">
+                                    <Spinner animation="border" variant="dark" />
+                                </div>
+                            ) : (
+                                <Row>
+                                    {filteredData.map((item) => (
+                                        <Col sm={3}>
+                                            <div className="project text-center mb-4" key={item.id}>
+                                                <img
+                                                    className="project_img p-3"
+                                                    src={item.image}
+                                                    alt={item.title}
+                                                />
+                                                <h6 className="py-3 mb-0">{item.title}</h6>
+                                            </div>
+                                        </Col>
+                                    ))}
+                                </Row>
+                            )
+                        }
                     </Col>
                 </Row>
-
                 {/* Filtered Results */}
-
-                {/* <Row>
-                    {data.projects.map((project) => (
-                        <Col sm={3}>
-                            <div
-                                key={project._id}
-                                className="project text-center mb-4"
-                            >
-                                <a href={`/project/${project._id}`} className="m-auto">
-                                    <img
-                                        className="project_img p-3"
-                                        src={project.image}
-                                        alt={project.name}
-                                    />
-                                    <h6 className="py-3 mb-0">{project.name}</h6>
-                                </a>
-                            </div>
-                        </Col>
-                    ))}
-                </Row> */}
             </div>
         </div>
     );
