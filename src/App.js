@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import WorkPage from './pages/Work';
 import Skills from './pages/Skills';
 import Gallery from './pages/Gallery';
+import ProjectOverview from './pages/ProjectOverview';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/work" element={<WorkPage />} />
+          <Route path="/work/adaptive-design-system-for-archlight" element={<ProjectOverview />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/gallery" element={<Gallery />} />
         </Routes>

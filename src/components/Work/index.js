@@ -22,7 +22,7 @@ function Work() {
                                 <Col sm={6}>
                                     <Image src={avatar} alt="avatar" className='avatar_img mb-4' />
                                     <p>In this Portfolio, I developed a flexible and scalable design system of portfolio by using Next.js for front-end development and Figma for design collaboration.</p>
-                                    <Link to="/work" className='content_button'>
+                                    <Link to="/work/adaptive-design-system-for-archlight" className='content_button'>
                                         Read Case Study <BsChevronRight />
                                     </Link>
                                 </Col>
