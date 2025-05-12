@@ -33,7 +33,7 @@ function ProjectOverview() {
                                 </ul>
                                 <h3 className='my-4'><b>Technologies Used</b></h3>
                                 <ul>
-                                    <li><strong>Next.js</strong>: For fast, server-rendered React applications.</li>
+                                    <li><strong>React js</strong>: For fast, server-rendered React applications.</li>
                                     <li><strong>Figma</strong>: For creating and managing design assets and prototypes.</li>
                                     <li><strong>Styled-Components </strong>: For styling React components with a modular, themable approach.</li>
                                     <li><strong>Storybook</strong>: For building an interactive, documented component library.</li>
